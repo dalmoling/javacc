@@ -1,4 +1,4 @@
-# Documentação da Linguagem ERS
+# Documentação da Linguagem
 
 ## Índice
 - [Introdução](#introdução)
