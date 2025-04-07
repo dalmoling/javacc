@@ -246,4 +246,4 @@ function multiplicar(int x, int y){
 
 ---  
 
-**Criado com ♥ para aprendizado acadêmico.**
+**Criado por Gustavo Dalmolin e Kelvin Lazzaris.**
