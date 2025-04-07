@@ -211,9 +211,8 @@ function soma(int a, int b){
 ## 📃 Exemplo Completo
 
 ```java
-/* Exemplo */
-
-// Decisão (if/else)
+/* Exemplo ERS */
+// Decisão
 if(1){
     write(1);
 } else {
@@ -222,13 +221,11 @@ if(1){
 for {
     write(1);
 }
-
 int ano = 2024;
+text nome = "ALUNO";
 getInt();
 getText();
-
 write(ano);
-
 function multiplicar(int x, int y){
     int resultado = x;
     write(resultado);
