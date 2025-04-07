@@ -49,8 +49,8 @@ Utilizados para documentar ou explicar o código.
 // Este é um comentário de linha
 ```
 
-🔢 Tipos de Dados
-A linguagem ERS suporta dois tipos primitivos:
+# 🔢 Tipos de Dados
+A linguagem suporta dois tipos primitivos:
 
 Tipo	Descrição	Exemplo
 int	Número inteiro	int x = 10;
