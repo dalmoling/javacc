@@ -211,35 +211,26 @@ function soma(int a, int b){
 ## 📃 Exemplo Completo
 
 ```java
-/* Exemplo completo da linguagem ERS */
+/* Exemplo */
 
 // Decisão (if/else)
 if(1){
-    write("Condição verdadeira");
+    write(1);
 } else {
-    write("Condição falsa");
+    write(0);
 }
-
-// Estrutura de repetição
 for {
-    write("Executando loop");
+    write(1);
 }
 
-// Declaração de variáveis
 int ano = 2024;
-text saudacao = "Olá, ERS";
-
-// Entrada de dados
 getInt();
 getText();
 
-// Saída de dados
-write("Finalizando programa");
+write(ano);
 
-// Procedimento com parâmetros
 function multiplicar(int x, int y){
-    int resultado = x * y;
-    write("Resultado da multiplicação:");
+    int resultado = x;
     write(resultado);
 }
 ```
