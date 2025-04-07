@@ -28,7 +28,7 @@ A **linguagem CompLang** é uma linguagem simples e didática, criada para demon
 
 ## 🔖 Sintaxe Geral
 
-A estrutura básica de um programa ERS deve seguir esta ordem geral:
+A estrutura básica de um programa CompLang deve seguir esta ordem geral:
 
 1. Comentários iniciais
 2. Decisões (if/else)
@@ -61,12 +61,12 @@ Utilizados para documentar ou explicar o código.
 
 ## 🔢 Tipos de Dados
 
-A linguagem ERS suporta dois tipos primitivos:
+A linguagem CompLang suporta dois tipos primitivos:
 
 | Tipo | Descrição                  | Exemplo       |
 |------|----------------------------|---------------|
 | int  | Número inteiro             | `int x = 10;` |
-| text | Texto (string)             | `text nome = "ERS";` |
+| text | Texto (string)             | `text nome = "CompLang";` |
 
 ---
 
@@ -181,7 +181,7 @@ write(expressao);
 
 Exemplos:
 ```java
-write("Olá, ERS!");
+write("Olá, CompLang!");
 write(123);
 ```
 
@@ -211,7 +211,7 @@ function soma(int a, int b){
 ## 📃 Exemplo Completo
 
 ```java
-/* Exemplo ERS */
+/* Exemplo CompLang */
 // Decisão
 if(1){
     write(1);
