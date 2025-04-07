@@ -1,0 +1,34 @@
+Documentação da Linguagem ERS
+  
+1. Introdução
+A linguagem ERS foi criada para ilustrar os conceitos fundamentais de linguagens de programação e compiladores. Ela possui uma sintaxe simples 
+e organizada, A ERS inclui suporte a:
+
+Comentários (linha e bloco)
+
+Comandos de decisão (if/else)
+
+Estruturas de repetição (for, while, foreach)
+
+Declaração de variáveis com tipos simples (int e text)
+
+Entrada de dados (getInt, getText)
+
+Saída de dados (write)
+
+Declaração de procedimentos (funções) com parâmetros
+
+2. Sintaxe Geral
+Um programa escrito em ERS deve seguir uma estrutura predefinida. A ordem dos elementos, conforme a gramática do parser, é a seguinte:
+
+-> Comentários iniciais
+-> Comando de decisão (if/else)
+-> Estruturas de repetição (for, while, foreach)
+-> Declaração de variáveis
+-> Comandos de entrada de dados
+-> Comandos de saída de dados
+-> Declaração de procedimentos (funções)
+-> Finalização (fim do arquivo)
+  
+Essa ordem É RIGIDA na versão atual da linguagem; portanto, recomenda-se seguir exatamente essa estrutura pois se não irá ocorrer erros de compilação.
+  
