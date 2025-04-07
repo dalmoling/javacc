@@ -7,16 +7,16 @@ Esta documentação apresenta todos os elementos e comandos da linguagem de prog
 ## 📚 Índice
 - [Introdução](#-introdução)
 - [Sintaxe Geral](#-sintaxe-geral)
-- [Comentários](#comentários)
-- [Tipos de Dados](#tipos-de-dados)
-- [Declaração de Variáveis](#declaração-de-variáveis)
-- [Identificadores](#identificadores)
-- [Comandos de Decisão](#comandos-de-decisão)
-- [Estruturas de Repetição](#estruturas-de-repetição)
-- [Entrada de Dados](#entrada-de-dados)
-- [Saída de Dados](#saída-de-dados)
-- [Procedimentos (Funções)](#procedimentos-funções)
-- [Exemplo Completo](#exemplo-completo)
+- [Comentários](#-comentários)
+- [Tipos de Dados](#-tipos-de-dados)
+- [Declaração de Variáveis](#-declaração-de-variáveis)
+- [Identificadores](#-identificadores)
+- [Comandos de Decisão](#-comandos-de-decisão)
+- [Estruturas de Repetição](#-estruturas-de-repetição)
+- [Entrada de Dados](#-entrada-de-dados)
+- [Saída de Dados](#-saída-de-dados)
+- [Procedimentos (Funções)](#-procedimentos-funções)
+- [Exemplo Completo](#-exemplo-completo)
 
 ---
 
