@@ -47,3 +47,11 @@ Utilizados para documentar ou explicar o código.
 **Comentário de linha:**
 ```java
 // Este é um comentário de linha
+```
+
+🔢 Tipos de Dados
+A linguagem ERS suporta dois tipos primitivos:
+
+Tipo	Descrição	Exemplo
+int	Número inteiro	int x = 10;
+text	Texto (string)	text nome = "ERS";
