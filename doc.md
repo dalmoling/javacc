@@ -1,6 +1,6 @@
-# Documentação Completa da Linguagem ERS
+# Documentação Completa da Linguagem CompLang
 
-Esta documentação apresenta todos os elementos e comandos da linguagem de programação ERS, projetada para fins didáticos no estudo de compiladores.
+Esta documentação apresenta todos os elementos e comandos da linguagem de programação, projetada para fins didáticos (apenas reconhecimento das funções de LP) no estudo de compiladores.
 
 ---
 
@@ -22,7 +22,7 @@ Esta documentação apresenta todos os elementos e comandos da linguagem de prog
 
 ## 🚀 Introdução
 
-A **linguagem ERS** é uma linguagem simples e didática, criada para demonstrar conceitos fundamentais na construção de compiladores. Ela abrange desde comandos básicos até funções mais complexas dentro das limitações de regras especificas da ordem geral.
+A **linguagem CompLang** é uma linguagem simples e didática, criada para demonstrar conceitos fundamentais na construção de compiladores. Ela abrange desde comandos básicos até funções mais complexas dentro das limitações de regras especificas da ordem geral.
 
 ---
 
