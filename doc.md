@@ -1,34 +1,38 @@
-# Documentação da Linguagem
+# Documentação Completa da Linguagem ERS
 
-## Índice
+Esta documentação apresenta todos os elementos e comandos da linguagem de programação ERS, projetada para fins didáticos no estudo de compiladores.
+
+---
+
+## 📚 Índice
 - [Introdução](#introdução)
 - [Sintaxe Geral](#sintaxe-geral)
-- [Elementos da Linguagem](#elementos-da-linguagem)
-  - [Comentários](#comentários)
-  - [Tipos e Variáveis](#tipos-e-variáveis)
-  - [Identificadores](#identificadores)
-  - [Comandos de Decisão](#comandos-de-decisão)
-  - [Estruturas de Repetição](#estruturas-de-repetição)
-  - [Entrada de Dados](#entrada-de-dados)
-  - [Saída de Dados](#saída-de-dados)
-  - [Procedimentos (Funções)](#procedimentos-funções)
+- [Comentários](#comentários)
+- [Tipos de Dados](#tipos-de-dados)
+- [Declaração de Variáveis](#declaração-de-variáveis)
+- [Identificadores](#identificadores)
+- [Comandos de Decisão](#comandos-de-decisão)
+- [Estruturas de Repetição](#estruturas-de-repetição)
+- [Entrada de Dados](#entrada-de-dados)
+- [Saída de Dados](#saída-de-dados)
+- [Procedimentos (Funções)](#procedimentos-funções)
 - [Exemplo Completo](#exemplo-completo)
 
 ---
 
-## Introdução
+## 🚀 Introdução
 
-A linguagem **ERS** foi desenvolvida com objetivo acadêmico para demonstrar conceitos básicos sobre compiladores. Ela conta com estruturas fundamentais como comandos condicionais, loops, funções, declarações de variáveis e operações básicas de entrada e saída.
+A **linguagem ERS** é uma linguagem simples e didática, criada para demonstrar conceitos fundamentais na construção de compiladores. Ela abrange desde comandos básicos até funções mais complexas.
 
 ---
 
-## Sintaxe Geral
+## 🔖 Sintaxe Geral
 
-Todo programa ERS deve respeitar a seguinte ordem básica:
+A estrutura básica de um programa ERS deve seguir esta ordem geral:
 
-1. Comentários
-2. Decisão (if/else)
-3. Estruturas de repetição (for/while/foreach)
+1. Comentários iniciais
+2. Decisões (if/else)
+3. Repetições (for/while/foreach)
 4. Declaração de variáveis
 5. Entrada de dados
 6. Saída de dados
@@ -36,18 +40,10 @@ Todo programa ERS deve respeitar a seguinte ordem básica:
 
 ---
 
-## Elementos da Linguagem
+## 💬 Comentários
 
-### Comentários
+Utilizados para documentar ou explicar o código.
 
-**Comentário de linha:**  
-
+**Comentário de linha:**
 ```java
-// Comentário de uma linha
-```
-
-**Comentário de Bloco:** 
-```java
-/* Comentário
-   de bloco */
-```
+// Este é um comentário de linha
