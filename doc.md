@@ -5,8 +5,8 @@ Esta documentação apresenta todos os elementos e comandos da linguagem de prog
 ---
 
 ## 📚 Índice
-- [Introdução](#introdução)
-- [Sintaxe Geral](#sintaxe-geral)
+- [Introdução](#-introdução)
+- [Sintaxe Geral](#-sintaxe-geral)
 - [Comentários](#comentários)
 - [Tipos de Dados](#tipos-de-dados)
 - [Declaração de Variáveis](#declaração-de-variáveis)
