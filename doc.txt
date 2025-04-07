@@ -5,17 +5,11 @@ A linguagem ERS foi criada para ilustrar os conceitos fundamentais de linguagens
 e organizada, A ERS inclui suporte a:
 
 Comentários (linha e bloco)
-
 Comandos de decisão (if/else)
-
 Estruturas de repetição (for, while, foreach)
-
 Declaração de variáveis com tipos simples (int e text)
-
 Entrada de dados (getInt, getText)
-
 Saída de dados (write)
-
 Declaração de procedimentos (funções) com parâmetros
 
 2. Sintaxe Geral
