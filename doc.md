@@ -22,7 +22,7 @@ Esta documentação apresenta todos os elementos e comandos da linguagem de prog
 
 ## 🚀 Introdução
 
-A **linguagem ERS** é uma linguagem simples e didática, criada para demonstrar conceitos fundamentais na construção de compiladores. Ela abrange desde comandos básicos até funções mais complexas.
+A **linguagem ERS** é uma linguagem simples e didática, criada para demonstrar conceitos fundamentais na construção de compiladores. Ela abrange desde comandos básicos até funções mais complexas dentro das limitações de regras especificas da ordem geral.
 
 ---
 
