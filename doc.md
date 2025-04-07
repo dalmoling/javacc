@@ -44,8 +44,10 @@ Todo programa ERS deve respeitar a seguinte ordem básica:
 
 ```java
 // Comentário de uma linha
+```
 
 **Comentário de Bloco:** 
+```java
 /* Comentário
    de bloco */
-
+```
