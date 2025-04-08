@@ -26,7 +26,5 @@ Implementar corretamente o comando `return` também se mostrou desafiador. Inici
 
 Além disso, foi necessário revisar a estrutura das expressões e a gramática de comandos para permitir a integração correta do `return` em diferentes contextos (como dentro do método `main` ou funções definidas pelo usuário), garantindo que o comando funcionasse de maneira consistente e previsível.
 
----
-
+------------------
 Outro problema relevante também foi  definir a Hierarquia de Operadores nas Expressões
----
