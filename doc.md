@@ -1,205 +1,184 @@
-# Documentação Completa da Linguagem CompLang
+# Documentação da Linguagem ERS
 
-Esta documentação apresenta todos os elementos e comandos da linguagem de programação, projetada para fins didáticos (apenas reconhecimento das funções de LP) no estudo de compiladores.
-
----
-
-## 📚 Índice
-- [Introdução](#-introdução)
-- [Sintaxe Geral](#-sintaxe-geral)
-- [Comentários](#-comentários)
-- [Tipos de Dados](#-tipos-de-dados)
-- [Declaração de Variáveis](#-declaração-de-variáveis)
-- [Identificadores](#-identificadores)
-- [Comandos de Decisão](#-comandos-de-decisão)
-- [Estruturas de Repetição](#-estruturas-de-repetição)
-- [Entrada de Dados](#-entrada-de-dados)
-- [Saída de Dados](#-saída-de-dados)
-- [Procedimentos (Funções)](#-procedimentos-funções)
-- [Exemplo Completo](#-exemplo-completo)
+## Índice
+1. [Organização Geral do Programa](#organização-geral-do-programa)
+2. [Inclusão de Bibliotecas](#inclusão-de-bibliotecas)
+3. [Comentários](#comentários)
+4. [Declaração de Variáveis Globais](#declaração-de-variáveis-globais)
+5. [Método Main](#método-main)
+6. [Estruturas de Controle](#estruturas-de-controle)
+7. [Entrada e Saída](#entrada-e-saída)
+8. [Expressões e Operadores](#expressões-e-operadores)
+9. [Return Statement](#return-statement)
+10. [Definição de Funções/Procedimentos](#definição-de-funçõesprocedimentos)
+11. [Ordem de Execução](#ordem-de-execução)
+12. [Exemplos de Código Fonte](#exemplos-de-código-fonte)
 
 ---
 
-## 🚀 Introdução
+## Organização Geral do Programa
 
-A **linguagem CompLang** é uma linguagem simples e didática, criada para demonstrar conceitos fundamentais na construção de compiladores. Ela abrange desde comandos básicos até funções mais complexas dentro das limitações de regras especificas da ordem geral.
-
----
-
-## 🔖 Sintaxe Geral
-
-A estrutura básica de um programa CompLang deve seguir esta ordem geral:
-
-1. Comentários iniciais
-2. Decisões (if/else)
-3. Repetições (for/while/foreach)
-4. Declaração de variáveis
-5. Entrada de dados
-6. Saída de dados
-7. Procedimentos (funções)
+Elementos obrigatórios e ordem:
+1. Inclusões e Comentários (opcional)
+2. Declaração de Variáveis Globais (opcional)
+3. Método Main (obrigatório)
+4. Definição de Funções/Procedimentos (opcional)
 
 ---
 
-## 💬 Comentários
+## Inclusão de Bibliotecas
 
-Utilizados para documentar ou explicar o código.
-
-**Comentário de linha:**
-```java
-// Este é um comentário de linha
+```c
+#include <nome_da_biblioteca>
 ```
 
-**Comentário de bloco:**
-```java
-/* 
-  Este é um comentário
-  em bloco 
-*/
+Exemplo:
+```c
+#include <stdio.h>
 ```
 
 ---
 
-## 🔢 Tipos de Dados
+## Comentários
 
-A linguagem CompLang suporta dois tipos primitivos:
+- Linha única:
 
-| Tipo | Descrição                  | Exemplo       |
-|------|----------------------------|---------------|
-| int  | Número inteiro             | `int x = 10;` |
-| text | Texto (string)             | `text nome = "CompLang";` |
+```c
+// Comentário de linha única
+```
+
+- Bloco:
+
+```c
+/* Comentário
+   de bloco */
+```
 
 ---
 
-## 📌 Declaração de Variáveis
+## Declaração de Variáveis Globais
 
-Sintaxe geral para declarar variáveis:
-```java
-tipo identificador = valor;
+```c
+tipo identificador [= Expressao];
 ```
 
 Exemplos:
-```java
-int idade = 25;
-text mensagem = "Olá, mundo!";
+```c
+int idade = 30;
+text nome = "ERS";
 ```
 
 ---
 
-## 🏷️ Identificadores
+## Método Main
 
-Identificadores devem seguir as seguintes regras:
-
-- Começar por letra (a-z ou A-Z).
-- Podem conter letras, números e sublinhado (_).
-- Exemplos válidos: `nome`, `total_1`, `mediaFinal`.
+```c
+int main(int argc, char *argv[]){
+    // Corpo do main
+    return 0;
+}
+```
 
 ---
 
-## 🎯 Comandos de Decisão
+## Estruturas de Controle
 
-Permitem executar comandos com base em condições:
+### if/else
 
-Sintaxe:
-```java
-if(condicao){
-    // comandos verdadeiros
+```c
+if (Expressao) {
+    // comandos
 } else {
-    // comandos falsos
-}
-```
-
-Exemplo:
-```java
-if(idade > 18){
-    write("Maior de idade");
-} else {
-    write("Menor de idade");
-}
-```
-
----
-
-## 🔄 Estruturas de Repetição
-
-Permitem executar comandos repetidamente.
-
-### For
-```java
-for {
-    // comandos repetidos
-}
-```
-
-### While
-```java
-while {
-    // comandos repetidos
-}
-```
-
-### Foreach
-```java
-foreach {
-    // comandos repetidos
-}
-```
-
-Exemplo:
-```java
-for {
-    write("Loop infinito");
-}
-```
-
----
-
-## 📥 Entrada de Dados
-
-Permite capturar informações do usuário:
-
-| Comando   | Descrição               | Exemplo      |
-|-----------|-------------------------|--------------|
-| getInt(); | Lê um valor inteiro     | `getInt();`  |
-| getText();| Lê uma string (texto)   | `getText();` |
-
-Exemplo:
-```java
-getInt();
-getText();
-```
-
----
-
-## 📤 Saída de Dados
-
-Utilizado para exibir informações ao usuário:
-
-Sintaxe:
-```java
-write(expressao);
-```
-
-Exemplos:
-```java
-write("Olá, CompLang!");
-write(123);
-```
-
----
-
-## ⚙️ Procedimentos (Funções)
-
-Funções permitem encapsular e reutilizar código.
-
-Sintaxe:
-```java
-function nome(tipo parametro1, tipo parametro2){
     // comandos
 }
 ```
 
-Exemplo prático:
-```java
+### for
+
+```c
+for {
+    // comandos
+}
+```
+
+### while
+
+```c
+while {
+    // comandos
+}
+```
+
+### foreach
+
+```c
+foreach {
+    // comandos
+}
+```
+
+---
+
+## Entrada e Saída
+
+### Entrada
+
+```c
+getInt();
+getText();
+```
+
+### Saída
+
+```c
+write(Expressao);
+```
+
+Exemplo:
+```c
+write("Olá, ERS!");
+```
+
+---
+
+## Expressões e Operadores
+
+- Atribuição: `=`
+- Igualdade: `==`
+- Soma/Subtração: `+`, `-`
+- Multiplicação/Divisão: `*`, `/`
+
+Exemplos:
+```c
+x = x + 1;
+5 + 3 * 2;
+```
+
+---
+
+## Return Statement
+
+```c
+return Expressao;
+```
+
+Exemplo:
+```c
+return 0;
+```
+
+---
+
+## Definição de Funções/Procedimentos
+
+```c
+function nomeDaFuncao(tipo param1, tipo param2){
+    // comandos
+}
+```
+
+Exemplo:
+```c
 function soma(int a, int b){
     int resultado = a + b;
     write(resultado);
@@ -208,30 +187,85 @@ function soma(int a, int b){
 
 ---
 
-## 📃 Exemplo Completo
+## Ordem de Execução
 
-```java
-/* Exemplo CompLang */
-// Decisão
-if(1){
-    write(1);
-} else {
-    write(0);
+1. Inclusões e Comentários
+2. Declaração de Variáveis Globais
+3. Método Main
+4. Definição de Funções/Procedimentos
+
+---
+
+## Exemplos de Código Fonte
+
+### Exemplo 1
+
+```c
+#include <stdio.h>
+/* Programa simples com variável global e main */
+int globalVar = 10;
+text saudacao = "Olá, Mundo!";
+
+int main(int argc, char *argv[]){
+    if( 1 == 1 ){
+        write(globalVar);
+    } else {
+        write(0);
+    }
+    for {
+        write(saudacao);
+    }
+    getInt();
+    getText();
+    return 0;
 }
-for {
-    write(1);
+```
+
+### Exemplo 2
+
+```c
+#include <stdio.h>
+int num1 = 5;
+int num2 = 15;
+
+int main(int argc, char *argv[]){
+    write(num1);
+    write(num2);
+    return 0;
 }
-int ano = 2024;
-text nome = "ALUNO";
-getInt();
-getText();
-write(ano);
-function multiplicar(int x, int y){
-    int resultado = x;
+
+function soma(int a, int b){
+    int resultado = a + b;
     write(resultado);
 }
 ```
 
----  
+### Exemplo 3
 
-**Criado por Gustavo Dalmolin e Kelvin Lazzaris.**
+```c
+#include <stdio.h>
+text mensagem = "Teste";
+int contador = 0;
+
+int main(int argc, char *argv[]){
+    if( contador == 0 ){
+        write("Iniciando contagem");
+    } else {
+        write("Contagem inválida");
+    }
+    while {
+        write(contador);
+        contador = contador + 1;
+    }
+    getInt();
+    getText();
+    return 0;
+}
+
+function imprimirTexto(text txt){
+    write(txt);
+}
+```
+
+---
+
