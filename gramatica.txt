@@ -1,0 +1,50 @@
+/* Gramática Completa da Linguagem ERS */
+
+Programa ::= (IncluirBiblioteca | Comentario)* DeclaracaoVariaveis* MainMethod Procedimento*
+
+IncluirBiblioteca ::= "#include" "<" BibliotecaNome ">"
+BibliotecaNome ::= ID ("." ID)*
+
+Comentario ::= "//" texto | "/*" texto "*/"
+
+DeclaracaoVariaveis ::= ("int" | "text") ID ("=" Expressao)? ";"
+
+MainMethod ::= "int" "main" "(" MainParams ")" Bloco
+MainParams ::= "int" ID "," "char" "*" ID "[" "]"
+
+Procedimento ::= "function" ID "(" Parametros ")" Bloco
+Parametros ::= Parametro ("," Parametro)*
+Parametro ::= ("int" | "text") ID
+
+Bloco ::= "{" Statement* "}"
+Statement ::= DeclaracaoVariaveis
+            | EntradaDados
+            | SaidaDados
+            | Decisao
+            | Repeticao
+            | Procedimento
+            | Comentario
+            | ReturnStatement
+            | Expressao ";"
+
+EntradaDados ::= ("getInt" | "getText") "(" ")" ";"
+SaidaDados ::= "write" "(" Expressao? ")" ";"
+
+Decisao ::= "if" "(" Expressao ")" Bloco ("else" Bloco)?
+
+Repeticao ::= "for" Bloco | "while" Bloco | "foreach" Bloco
+
+ReturnStatement ::= "return" Expressao ";"
+
+Expressao ::= Atribuicao
+Atribuicao ::= Igualdade ("=" Atribuicao)?
+Igualdade ::= Soma ("==" Soma)*
+Soma ::= Produto (("+" | "-") Produto)*
+Produto ::= Termo (("*" | "/") Termo)*
+Termo ::= INTEGER_LITERAL | STRING_LITERAL | ID
+
+/* Tokens e Literais:
+   ID: letras e números começando com letra
+   INTEGER_LITERAL: sequência de dígitos
+   STRING_LITERAL: caracteres entre aspas duplas
+*/
