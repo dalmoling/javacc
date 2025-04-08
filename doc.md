@@ -1,4 +1,4 @@
-# Documentação da Linguagem ERS
+# Documentação da Linguagem CompLang
 
 ## Índice
 1. [Organização Geral do Programa](#organização-geral-do-programa)
@@ -65,7 +65,7 @@ tipo identificador [= Expressao];
 Exemplos:
 ```c
 int idade = 30;
-text nome = "ERS";
+text nome = "CompLang";
 ```
 
 ---
@@ -136,7 +136,7 @@ write(Expressao);
 
 Exemplo:
 ```c
-write("Olá, ERS!");
+write("Olá, CompLang!");
 ```
 
 ---
